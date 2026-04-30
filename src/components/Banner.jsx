@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Banner = () => {
   return (
-    <div className={`bg-[url('@/assets/banner.jpg')] h-[60vh] w-full bg-cover bg-no-repeat bg-center flex items-center`}>
+    <div className={`bg-[url('@/assets/banner.jpg')] h-[60vh] w-full bg-cover bg-no-repeat bg-center flex items-center mt-10 rounded-2xl`}>
       <div className="w-full h-full rounded-lg flex items-center">
         <div className="max-w-7xl mx-auto px-6 text-white">
           <h1 className="text-6xl text-[#631a37] font-bold">
