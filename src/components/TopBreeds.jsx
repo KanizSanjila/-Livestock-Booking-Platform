@@ -1,7 +1,3 @@
-import Image from "next/image";
-import cow1 from '@/assets/Deshi Shahi Cow.jpg';
-import cow2 from '@/assets/Australian Brahman Bull.jpg'
-import cow3 from '@/assets/Jamunapari Goat.jpg'
 
 const TopBreeds = () => {
   return (
