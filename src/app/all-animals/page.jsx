@@ -1,6 +1,9 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
+import { GrLocation} from "react-icons/gr";
+import Image from "next/image";
+import { FaWeight } from "react-icons/fa";
 
 
 const AllAnimalsPage =() => {
@@ -126,9 +129,11 @@ const AllAnimalsPage =() => {
           <div key={animal.id} className="card bg-base-100 shadow-lg border border-slate-100 hover:shadow-2xl transition-all group">
             {/* Image Section */}
             <figure className="relative h-60 w-full overflow-hidden">
-              <img
+              <Image
                 src={animal.image}
                 alt={animal.name}
+                width={300}
+                height={300}
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
               />
               <div className="absolute top-3 left-3 badge badge-neutral opacity-90">{animal.category}</div>
@@ -143,10 +148,10 @@ const AllAnimalsPage =() => {
               
               <div className="space-y-2 mt-4 text-slate-600 text-sm">
                 <div className="flex items-center gap-2">
-                  <span>⚖️</span> <span>Weight: <strong>{animal.weight} kg</strong></span>
+                  <FaWeight></FaWeight> <span>Weight: <strong>{animal.weight} kg</strong></span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span>📍</span> <span>Location: <strong>{animal.location}</strong></span>
+                 <GrLocation></GrLocation> <span>Location: <strong>{animal.location}</strong></span>
                 </div>
               </div>
 
@@ -154,7 +159,7 @@ const AllAnimalsPage =() => {
 
               <div className="card-actions justify-between items-center mt-2">
                 <div className="text-2xl font-black text-primary">
-                  ৳ {animal.price.toLocaleString()}
+                 $ {animal.price.toLocaleString()}
                 </div>
                 <Link href={`/animals/${animal.id}`}>
                     <button className="btn btn-primary btn-sm rounded-lg px-5 shadow-md">Details</button>

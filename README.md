@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+---
 
-## Getting Started
+#  Livestock Booking Platform
 
-First, run the development server:
+A modern digital marketplace and reservation system designed to bridge the gap between livestock farmers and traders. This platform simplifies the process of browsing, selecting, and booking cattle and goats for various needs, including Qurbani and commercial farming.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Purpose
+The goal of this project is to digitize the livestock trade by providing a transparent, efficient, and user-friendly platform. It allows buyers to view detailed specifications (weight, breed, age) of animals and book them instantly, reducing the need for physical intermediaries and ensuring healthy, verified listings.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**[ Live Project URL](https://livestock-booking-platform-alpha.vercel.app/)**
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+##  Key Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+*   **Dynamic Animal Inventory:** Browse a wide range of livestock, including premium breeds like Australian Brahman and Jamunapari Goats.
+*   **Advanced Sorting:** Easily find animals within your budget using the **Sort by Price** (Low to High / High to Low) functionality.
+*   **Detailed Listings:** Every animal comes with a dedicated details view showing weight, location, breed history, and health status.
+*   **Qurbani Tips & Guide:** Integrated sections for buyers to learn how to verify animal age and health before purchase.
+*   **Responsive UI:** A mobile-first design built with Tailwind CSS and DaisyUI, ensuring a seamless experience across all devices.
+*   **Real-time Cart/Booking:** A streamlined workflow for users to manage their selections and proceed to booking.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+### **NPM Packages Used**
+*   `next/image`: Optimized image rendering.
+*   `next/font`: Seamless integration of Google Fonts (Poppins/Inter).
+*   `react-icons`: For intuitive iconography across the interface.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
