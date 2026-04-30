@@ -5,7 +5,7 @@ import logo from '@/assets/cow.jpg'
 const Navbar = () => {
     const link = <>
         <li className='text-xl'><Link href='/'>Home</Link></li>
-        <li className='text-xl'><Link href='/'>All-Animals</Link></li>
+        <li className='text-xl'><Link href='/all-animals'>All-Animals</Link></li>
     </>
     return (
         <div className="navbar bg-base-100 shadow-sm">
