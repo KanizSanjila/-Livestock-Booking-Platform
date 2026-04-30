@@ -13,7 +13,7 @@ const Banner = () => {
             This platform connects farmers and traders through a seamless, modern interface.
           </p>
         <div className="text-center">
-          <button className="btn bg-[#631a37] text-white border-none">All Animals</button>
+         <Link href={'/all-animals'}><button className="btn bg-[#631a37] text-white border-none">All Animals</button></Link>
           </div>
         </div>
       </div>
