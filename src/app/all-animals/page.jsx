@@ -42,7 +42,7 @@ const AllAnimalsPage =() => {
     "age": 2,
     "location": "Rajshahi",
     "description": "A popular Black Bengal goat from Bangladesh, healthy and well-fattened.",
-    "image": "https://i.ibb.co/Dg1C5FrM/suryadip-dodiya-ex-gf-Teq-Kx8-unsplash.jpghttps://i.ibb.co/tpT3xk2g/arpan-mondal-fzwq-RUe-Ypws-unsplash.jpghttps://i.ibb.co/1YC2vVrd/billow926-s-Gad-Ug0r2-I-unsplash.jpg",
+    "image": "https://i.ibb.co/LDt62W85/wilsan-u-XW0kfll-B3i8-unsplash.jpg",
     "category": "Small Animal"
   },
   {
@@ -50,7 +50,7 @@ const AllAnimalsPage =() => {
     "name": "Jamunapari Goat",
     "type": "Goat",
     "breed": "Jamunapari",
-    "price": 3500,
+    "price": 35000,
     "weight": 40,
     "age": 3,
     "location": "Khulna",
@@ -81,7 +81,7 @@ const AllAnimalsPage =() => {
     "age": 2,
     "location": "Sylhet",
     "description": "A local white goat, healthy and a good option for Qurbani.",
-    "image": "https://i.ibb.co/tpT3xk2g/arpan-mondal-fzwq-RUe-Ypws-unsplash.jpg",
+    "image": "https://i.ibb.co/VWJLkv71/nandhu-kumar-j-AMc-Ubs-Tv-WE-unsplash.jpg",
     "category": "Small Animal"
   }
 ]);
