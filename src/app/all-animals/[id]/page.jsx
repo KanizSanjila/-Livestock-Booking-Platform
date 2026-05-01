@@ -1,3 +1,4 @@
+import { ModalForm } from "@/components/ModalForm";
 import { Chip, Separator } from "@heroui/react";
 import Image from "next/image";
 import { CiLocationOn } from "react-icons/ci";
@@ -39,6 +40,10 @@ const AnimalDetailsPage =async ({params}) => {
                   <span className="font-bold text-blue-600 flex justify-between items-center gap-1 text-2xl"><CiLocationOn /> {location}</span>
                 </div>
               </div>
+              
+              <div className="flex justify-center items-center">
+      <ModalForm></ModalForm>
+    </div>
     </div>
   </div>
 </div>
