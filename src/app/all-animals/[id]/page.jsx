@@ -14,7 +14,7 @@ const AnimalDetailsPage =async ({params}) => {
     // console.log(animal)
     const {name,age,price,image,weight,location,category,type,description,breed} = animal
   return (
-    <div className="bg-gray-100 rounded shadow-lg flex justify-center items-center mt-10 p-5">
+    <div className="bg-gray-100 rounded shadow-lg lg:flex justify-center items-center mt-10 p-5">
  <div className="relative">
      <figure>
    <Image src={image} width={300} height={200} alt={name} className="rounded-2xl"></Image>
