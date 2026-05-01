@@ -1,11 +1,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import logo from '@/assets/cow.jpg'
+import NavLink from './NavLink';
 
 const Navbar = () => {
     const link = <>
-        <li className='text-xl'><Link href='/'>Home</Link></li>
-        <li className='text-xl'><Link href='/all-animals'>All-Animals</Link></li>
+        <li className='text-xl'><NavLink href='/'>Home</NavLink></li>
+        <li className='text-xl'><NavLink href='/all-animals'>All-Animals</NavLink></li>
     </>
     return (
         <div className="navbar bg-base-100 shadow-sm">

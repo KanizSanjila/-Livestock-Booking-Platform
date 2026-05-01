@@ -9,7 +9,7 @@ const Footer = () => {
         A comprehensive digital marketplace and reservation system designed to streamline the buying and selling of livestock.
         </p>
         <div className="mb-8">
-          <p className="text-xs uppercase tracking-widest text-gray-400 text-center mb-4 font-semibold">
+          <p className="text-xs text-gray-400 text-center mb-4 font-semibold">
             Social Links
           </p>
           <div className="flex gap-4">
@@ -29,9 +29,9 @@ const Footer = () => {
           <p>© 2026 Livestock. All rights reserved.</p>
           
           <div className="flex gap-6 mt-4 md:mt-0">
-            <a href="about" className="hover:text-white transition">About</a>
-            <a href="contact" className="hover:text-white transition">Contact</a>
-            <a href="terms of service" className="hover:text-white transition">Terms of Service</a>
+            <a href="about">About</a>
+            <a href="contact">Contact</a>
+            <a href="terms of service">Terms of Service</a>
           </div>
         </div>
 

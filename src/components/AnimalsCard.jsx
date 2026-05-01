@@ -1,11 +1,12 @@
 import { Button, Card, Chip, Separator } from '@heroui/react';
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 import { CiLocationOn } from 'react-icons/ci';
 import { FaWeight } from 'react-icons/fa';
 
 const AnimalsCard = ({animal}) => {
-     const {name,price,image,weight,location,category} = animal
+     const {id,name,price,image,weight,location,category} = animal
     return (
         <Card>
            <div className='relative w-full aspect-square'>
@@ -25,7 +26,7 @@ const AnimalsCard = ({animal}) => {
           </div>
         </div>
             </div>
-            <Button variant='outline' className={'w-full bg-[#631a37] text-white border-none'}>View</Button>
+            <Link href={`/all-animals/${id}`}><Button variant='outline' className={'w-full bg-[#631a37] text-white border-none'}>Details</Button></Link>
         </Card>
     );
 };
