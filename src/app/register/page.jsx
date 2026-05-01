@@ -12,7 +12,7 @@ import {
   TextField,
 } from "@heroui/react";
 import { useRouter } from "next/navigation";
-import { GrGithub, GrGoogle } from "react-icons/gr";
+import { GrGoogle } from "react-icons/gr";
 
 const RegisterPage =() => {
     const router = useRouter();
@@ -35,7 +35,7 @@ const RegisterPage =() => {
     //   console.log({data,error})
 
     if(!error){
-        router.push('/')
+        router.push('/login')
     }
   }
 
