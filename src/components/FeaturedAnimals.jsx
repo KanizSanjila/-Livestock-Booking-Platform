@@ -9,7 +9,7 @@ const FeaturedAnimals =async () => {
     return (
         <div>
            <h1 className="text-center text-3xl font-bold mt-10 mb-5">Featured Animals</h1> 
-           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20">
+           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20 card animate__animated animate__fadeInUp">
             {
                 animals.map(animal=><AnimalsCard key={animal.id} animal={animal}></AnimalsCard>)
             }

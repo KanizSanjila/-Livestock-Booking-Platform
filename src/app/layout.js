@@ -2,6 +2,8 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import 'animate.css';
+import { Toaster } from "react-hot-toast";
 
 const poppins = Poppins({ 
   weight: ['400', '600', '700'], 
@@ -24,6 +26,7 @@ export default function RootLayout({ children }) {
         <main className="max-w-7xl mx-auto">
           {children}
         </main>
+         <Toaster />
         <Footer></Footer>
         </body>
     </html>

@@ -30,5 +30,6 @@ The goal of this project is to digitize the livestock trade by providing a trans
 *   `next/image`: Optimized image rendering.
 *   `next/font`: Seamless integration of Google Fonts (Poppins/Inter).
 *   `react-icons`: For intuitive iconography across the interface.
+*   `Animate.css`: Animate.css is one of the most popular and easiest-to-use CSS animation libraries.
 
 ---
