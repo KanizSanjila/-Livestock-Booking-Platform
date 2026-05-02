@@ -12,6 +12,7 @@ import {
   TextField,
 } from "@heroui/react";
 import { useRouter } from "next/navigation";
+import toast from "react-hot-toast";
 import { GrGoogle } from "react-icons/gr";
 
 const RegisterPage =() => {
@@ -44,6 +45,10 @@ const RegisterPage =() => {
      const data = await authClient.signIn.social({
     provider: "google",
   });
+
+   if(!error){
+          toast.success("SignUP Successful ✅");
+        }
 
   }
 
