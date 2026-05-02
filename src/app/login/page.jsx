@@ -11,6 +11,8 @@ import {
   Label,
   TextField,
 } from "@heroui/react";
+import Link from "next/link";
+import toast from "react-hot-toast";
 import { GrGoogle } from "react-icons/gr";
 
 const LoginPage = () => {
@@ -18,6 +20,8 @@ const LoginPage = () => {
     e.preventDefault();
     const email = e.target.email.value;
     const password=e.target.password.value;
+
+   
 
     // console.log({email,password})
 
@@ -34,6 +38,10 @@ const LoginPage = () => {
        const data = await authClient.signIn.social({
       provider: "google",
     });
+
+      if(!error){
+        toast.success("Login Successful ✅");
+      }
   
     }
 
@@ -85,7 +93,7 @@ const LoginPage = () => {
           </Description>
           <FieldError />
         </TextField>
-
+         <p className='text-center bg-gray-200'>Dont’t Have An Account ? <Link href={'/register'} className='text-red-400'>Register</Link></p>
         <div className="flex gap-2">
           <Button type="submit">
             <Check />

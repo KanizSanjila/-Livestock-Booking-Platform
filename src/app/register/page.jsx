@@ -30,6 +30,7 @@ const RegisterPage =() => {
         password, 
         name,
         image, 
+        rememberMe:true,
         callbackURL: "/"
       })
     //   console.log({data,error})
