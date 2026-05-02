@@ -3,6 +3,7 @@ import { UpdateUserModal } from '@/components/UpdateUserModal';
 import { authClient } from '@/lib/auth-client';
 import { Avatar, Card } from '@heroui/react';
 
+
 const ProfilePage = () => {
     const userData = authClient.useSession()
       const user = userData.data?.user
