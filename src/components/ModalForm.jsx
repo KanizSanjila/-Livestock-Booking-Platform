@@ -27,7 +27,7 @@ export function ModalForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    toast.success("Booking Successful ✅");
+    toast.success("Booking Successful");
 
 
     setForm({

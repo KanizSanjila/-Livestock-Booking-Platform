@@ -36,21 +36,27 @@ const RegisterPage =() => {
       })
     //   console.log({data,error})
 
-    if(!error){
-        router.push('/login')
-    }
+    if (error) {
+    toast.error(error.message || "Registration failed");
+  } else {
+    toast.success("Registration Successful");
+    router.push("/login");
+  }
   }
 
-  const handleGoogleSignIn =async () =>{
-     const data = await authClient.signIn.social({
+ const handleGoogleSignIn = async () => {
+  const { data, error } = await authClient.signIn.social({
     provider: "google",
+    callbackURL: "/",
   });
 
-   if(!error){
-          toast.success("SignUP Successful ✅");
-        }
-
+  if (error) {
+    toast.error(error.message || "Google signup failed");
+  } else {
+    toast.success("Signup Successful");
+    router.push("/");
   }
+};
 
   return (
     <Card className="shadow-2xl mx-auto w-125 py-10 mt-5">
@@ -106,7 +112,7 @@ const RegisterPage =() => {
           }}
         >
           <Label>Password</Label>
-          <Input placeholder="Enter your password" />
+          <Input name="password" placeholder="Enter your password" />
           <Description>
             Must be at least 8 characters with 1 uppercase and 1 number
           </Description>

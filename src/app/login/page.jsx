@@ -14,8 +14,10 @@ import {
 import Link from "next/link";
 import toast from "react-hot-toast";
 import { GrGoogle } from "react-icons/gr";
+import { useRouter } from "next/navigation";
 
 const LoginPage = () => {
+  const router = useRouter();
   const onSubmit = async (e) => {
     e.preventDefault();
     const email = e.target.email.value;
@@ -30,18 +32,30 @@ const LoginPage = () => {
         password, 
         callbackURL: "/"
       })
-      console.log({data,error})
+      // console.log({data,error})
+
+    if (error) {
+    toast.error(error.message || "Login failed");
+  } else {
+    toast.success("Login Successful");
+    router.push("/");
+  }
   }
 
   
-    const handleGoogleSignIn =async () =>{
-       const data = await authClient.signIn.social({
-      provider: "google",
-    });
+   const handleGoogleSignIn = async () => {
+  const { data, error } = await authClient.signIn.social({
+    provider: "google",
+    callbackURL: "/", // optional but recommended
+  });
 
-      if(!error){
-        toast.success("Login Successful ✅");
-      }
+     if (error) {
+    toast.error(error.message || "Google login failed");
+  } else {
+    toast.success("Login Successful");
+    router.push("/");
+  }
+
   
     }
 
@@ -87,7 +101,7 @@ const LoginPage = () => {
           }}
         >
           <Label>Password</Label>
-          <Input placeholder="Enter your password" />
+          <Input name="password" placeholder="Enter your password" />
           <Description>
             Must be at least 8 characters with 1 uppercase and 1 number
           </Description>
